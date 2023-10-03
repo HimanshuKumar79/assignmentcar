@@ -1,20 +1,14 @@
 import React from "react";
-import { IoPersonOutline,IoCarSportSharp } from "react-icons/io5";
+import { IoPersonOutline, IoCarSportSharp } from "react-icons/io5";
 import { BsSpeedometer2 } from "react-icons/bs";
 import { GiSteeringWheel } from "react-icons/gi";
 import { AiOutlineHeart } from "react-icons/ai";
 
-
 const Card = ({ name, price, url, capacity, fuel, type, year, driveType }) => {
-
   return (
     <div className="h-[400px] w-[500px] rounded-md p-3 bg-[#f8f6f6] shadow-md">
       <div className="w-[99%] h-[200px] mx-auto flex items-center justify-center ">
-        <img
-          src={url}
-          className="object-cover w-full h-full rounded-xl"
-          alt="Image"
-        />
+        <img src={url} className="object-cover w-full h-full rounded-xl" />
       </div>
       <div className="w-full flex px-2 justify-between items-center mt-3">
         <p className="font-semibold text-[23px] text-[#302e2e]">{name}</p>
@@ -50,10 +44,7 @@ const Card = ({ name, price, url, capacity, fuel, type, year, driveType }) => {
           <div className="p-[8px] cursor-pointer rounded-md text-[19px] text-blue-600 bg-gray-200 h-fit w-fit">
             <AiOutlineHeart />
           </div>
-          <div
-
-            className="flex justify-center items-center text-[13px] font-semibold bg-blue-500 cursor-pointer text-white rounded-md px-3 py-[6px]"
-          >
+          <div className="flex justify-center items-center text-[13px] font-semibold bg-blue-500 cursor-pointer text-white rounded-md px-3 py-[6px]">
             Rent now
           </div>
         </div>
