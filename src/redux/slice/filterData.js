@@ -6,7 +6,7 @@ const initialState = {
 };
 
 export const FilterCarData = createSlice({
-  name: "loginCheck",
+  name: "FilterCarData",
   initialState,
   reducers: {
     filterCarData: (state, action) => {
