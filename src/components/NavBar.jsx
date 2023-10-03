@@ -3,13 +3,16 @@ import { CiSearch } from "react-icons/ci";
 import { BsChevronDown } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { filterCarData } from "../redux/slice/filterData";
-const NavBar = () => {
+const NavBar = ({ setCurrentPage }) => {
   const dispatch = useDispatch();
   return (
     <div className="flex fixed top-0 mt-3 shadow-lg justify-start items-center gap-9 w-[98%] pt-2 px-5 rounded-2xl py-3 bg-[#f0ecec] mx-auto">
       <div className="flex justify-center items-start h-fit  pt-2 w-[300px]">
         <input
-          onChange={(e) => dispatch(filterCarData(e.target.value))}
+          onChange={(e) => {
+            setCurrentPage(1);
+            dispatch(filterCarData(e.target.value));
+          }}
           placeholder="Search..."
           className="text-[15px] font-semibold outline-none pl-3 py-2 rounded-l-3xl w-full border-l-2 border-t border-b border-solid border-[#dad0d0]"
         />

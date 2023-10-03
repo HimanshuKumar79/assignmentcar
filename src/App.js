@@ -30,7 +30,7 @@ function App() {
     <div
       className={`h-full w-[100vw] bg-[#f0ecec] pt-4 flex flex-col justify-start items-center`}
     >
-      <NavBar />
+      <NavBar setCurrentPage={setCurrentPage}/>
       <div className="grid grid-cols-3 grid-rows-2 gap-2 my-[80px]">
         {carData.length > 0 ? (
           currentItems.map(
