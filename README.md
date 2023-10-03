@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Car Search Website in React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a car search website built using React.js, focused on desktop-only screens. It allows users to search for cars based on their names and navigate through paginated results. The website displays car cards in rows of three, with six cards visible at a time.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Car search functionality based on car names.
+- Pagination with next, previous, and numbered pages.
+- Display of car cards in rows of three, showing six cards at a time.
+- URL changes dynamically to reflect the current page.
+- Mock data from a JSON file is used for demonstration.
+- Non-responsive design for desktop screens.
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory using a command-line interface.
+3. Install the necessary dependencies using `npm install`.
+4. Start the development server using `npm start`.
+5. Open a web browser and go to `http://localhost:3000` to access the car search website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+The project is structured with reusable components to ensure code modularity and maintainability. Key components include:
+- **CarSearchPage**: The main page displaying car cards and handling pagination.
+- **CarCard**: The component representing each car card.
+- **Pagination**: The component responsible for handling pagination controls.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Data Storage
 
-### `npm run build`
+Mock car data is stored in a JSON file (`cars.json`). The data is structured to mimic real car information, and the application fetches and utilizes this data for display and search functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pagination
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The pagination component provides functionality to navigate through the paginated results. It includes next, previous, and numbered page buttons, allowing users to explore different pages of car cards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Thank you for reviewing this project! If you have any questions or suggestions, please feel free to reach out.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
